@@ -1,0 +1,9 @@
+name: TempCommands
+main: rip.hippo.tempcommands.TempCommands
+version: 1.0.0
+author: Hippo
+commands:
+  temp:
+    description: Adds a temp command
+  runtemp:
+    description: Runs the temp commands
