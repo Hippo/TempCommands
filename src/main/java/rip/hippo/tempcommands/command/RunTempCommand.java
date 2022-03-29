@@ -30,6 +30,8 @@ public class RunTempCommand implements CommandExecutor {
     for (String tempCommand : temp) {
       Bukkit.dispatchCommand(Bukkit.getConsoleSender(), tempCommand);
     }
+    javaPlugin.getConfig().set("temp", null);
+    Bukkit.getScheduler().runTaskAsynchronously(javaPlugin, javaPlugin::saveConfig);
     return true;
   }
 }
